@@ -3,7 +3,7 @@ package tech.getarrays.employeemanager.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
+@Entity // <-- specifies that the class is mapped to a database table
 public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
